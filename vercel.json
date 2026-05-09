@@ -1,0 +1,6 @@
+{
+  "installCommand": "cd Eisha_Portfolio/eishaPortfolio && npm ci",
+  "buildCommand": "cd Eisha_Portfolio/eishaPortfolio && npm run build",
+  "outputDirectory": "Eisha_Portfolio/eishaPortfolio/build",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}

@@ -1,0 +1,22 @@
+# dependencies
+**/node_modules/
+
+# production build (generated on Vercel)
+Eisha_Portfolio/eishaPortfolio/build/
+
+# Vercel
+.vercel
+
+# logs & env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.env.*
+
+# OS & editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
