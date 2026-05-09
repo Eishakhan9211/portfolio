@@ -4,7 +4,6 @@ import './Navigation.css';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [hoveredIndex, setHoveredIndex] = useState(null);
   const location = useLocation();
   const navRef = useRef(null);
 
@@ -49,14 +48,12 @@ const Navigation = () => {
   return (
     <div className="nav-wrapper" ref={navRef}>
       <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-        {navItems.map((item, index) => (
+        {navItems.map((item) => (
           <li key={item.path}>
             <Link
               to={item.path}
               className={`nav-link ${isActive(item.path)}`}
               onClick={closeMenu}
-              onMouseEnter={() => setHoveredIndex(index)}
-              onMouseLeave={() => setHoveredIndex(null)}
             >
               <span className="nav-icon">{item.icon}</span>
               <span className="nav-text">{item.label}</span>
